@@ -1,0 +1,2 @@
+# minday
+Thinking Software
