@@ -1,0 +1,134 @@
+.cssrect {
+    /* background: red; */
+}
+
+.cssrrect {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.cssoval1 {
+	/* background: red; */
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.cssoval {
+    position:relative;
+    border-radius: 10px;
+}
+
+.cssoval:after {
+    position:absolute;
+    content:' ';
+    width: 0; height: 0;
+    border-top: 10px solid inherit;
+    border-left:  10px solid transparent;
+    border-right: 10px solid transparent;
+    top:100%;
+    left: 50%;
+    margin-left: -10px;
+}
+
+
+/* 
+.cssoval {
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-right-width:50px;
+}
+
+.cssoval1:after {
+    width: 0;
+    height: 0;
+    border-top: 50% solid transparent;
+    border-left: 100% solid red;
+    border-bottom: 50% solid transparent;
+    background: Red;
+    content:'';
+}
+*/
+
+
+.cssegg1 {
+/*   display:block; */
+/*   width: 126px; 
+   height: 180px; */
+/*   background-color: red; */
+/*   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px; */
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+
+.parallelogram {
+/*    width: 150px;
+    height: 100px;
+*/    -webkit-transform: skew(20deg);
+       -moz-transform: skew(20deg);
+         -o-transform: skew(20deg);
+    background: red;
+}
+
+.cssegg,#trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
+}
+
+.nice-gem {
+	width:14px;
+	height:14px;
+	text-indent:-9999em;
+	background-image:
+		-webkit-gradient(radial, 7 2, 0, 7 2, 3,
+			from(rgba(255,255,255,0.85)),
+			to(rgba(255,255,255,0))),
+		-webkit-gradient(radial, 7 12, 0, 7 7, 14,
+			from(#c7f08b),
+			to(#006013));
+	-webkit-border-radius:7px;
+	border:1px solid #48762c;
+	-webkit-box-shadow:0 1px 0 #fff;
+}
+
+
+.cssegg,#octagon {
+    /* width: 100px;
+    height: 100px; */
+    background: red;
+    position: relative;
+}
+ 
+.cssegg:before,#octagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    border-bottom: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}
+ 
+.cssegg:after,#octagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+    border-top: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}

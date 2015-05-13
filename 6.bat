@@ -1,0 +1,1 @@
+call node C:\01\node_modules\stylus\bin\stylus <index.stylus >css\index.css

@@ -1,0 +1,409 @@
+doctype 5
+html(lang="ru")
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		title Minday 0.010 Tokyo
+		link(rel="stylesheet", href="css/bootstrap.css")
+		link(rel="stylesheet", href="css/bootstrap-responsive.css")
+		link(rel="stylesheet", href="css/minday.css")
+		link(rel="stylesheet", href="css/font.css")
+		link(rel="stylesheet", href="css/jquery.qtip.css")
+		link(rel="stylesheet", href="css/themename/jquery-ui-1.8.23.custom.css")
+		//link(rel="stylesheet", href="css/css-shape.css")
+		link(href='http://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic',rel='stylesheet',type='text/css')
+		script(src="js/jquery.js")
+		script(src="js/jquery-ui.js")
+		script(src="js/jquery.cookie.js")
+		script(src="js/bootstrap.js")
+		//script(src="js/raphael.js")
+		//script(src="js/g.raphael.js")
+		//script(src="js/g.pie.js")
+		//script(src="js/lisp.js") из-за 
+		script(src="js/base64.js")
+		script(src="js/jszip.js")
+		//script(src="js/jszip-inflate.js")
+		//script(src="js/jszip-deflate.js")
+		//script(src="js/jszip-load.js")
+		script(src="js/faye-browser.js")
+		//script(src="js/paper.js")
+		script(src="js/jquery.qtip.js")
+
+
+		script(src="jsc/global.js")
+		script(src="jsc/keys.js")
+		script(src="jsc/timer.js")
+
+		script(src="jsc/idea.js")
+		script(src="jsc/draw.js")
+		script(src="jsc/modify.js")
+		script(src="jsc/move.js")
+		script(src="jsc/navi.js")
+		//script(src="jsc/matrix.js")
+		script(src="jsc/pyramid.js")
+		script(src="jsc/mindmap.js")
+		script(src="jsc/table.js")
+		//script(src="jsc/piechart.js")
+		script(src="jsc/menu.js")
+		script(src="jsc/tabs.js")
+		script(src="jsc/prolog.js")
+		//script(src="jsc/presentation.js")
+		script(src="jsc/map.js")
+		script(src="jsc/tree.js")
+		script(src="jsc/ishikawa.js")
+		script(src="jsc/bcg.js")
+		script(src="jsc/gantt.js")
+		script(src="jsc/blueocean.js")
+		//script(src="jsc/pie.js")
+		script(src="jsc/tag.js")
+		script(src="jsc/icon.js")
+		script(src="jsc/tick.js")
+		script(src="jsc/image.js")
+		script(src="jsc/gem.js")
+		script(src="jsc/sticker.js")
+		script(src="jsc/list.js")
+		script(src="jsc/gem.js")
+		script(src="jsc/daisy.js")
+
+		script(src="jsc/shape.js")
+
+		script(src="jsc/file.js")
+		script(src="jsc/server.js")
+		script(src="jsc/edit.js")
+		script(src="jsc/format.js")
+		script(src="jsc/text.js")
+		script(src="jsc/insert.js")
+		script(src="jsc/view.js")
+		script(src="jsc/help.js")
+
+
+		script(src="jsc/sample-fivewhys.js")
+		script(src="jsc/sample-projecti.js")
+		script(src="jsc/sample-swot.js")
+		script(src="jsc/sample-mmap.js")
+		script(src="jsc/sample-matrix.js")
+		script(src="jsc/sample-sixhat.js")
+		script(src="jsc/sample-maslow.js")
+		script(src="jsc/sample-text.js")
+		script(src="jsc/sample-checklist.js")
+		script(src="jsc/sample-anketa.js")
+		script(src="jsc/sample-leadkpi.js")
+		script(src="jsc/sample-forcefield.js")
+		script(src="jsc/sample-quotes.js")
+		script(src="jsc/sample-market.js")
+		script(src="jsc/sample-prolog.js")
+		//script(src="jsc/sample-lisp.js")
+		script(src="jsc/sample-sticker.js")
+		script(src="jsc/sample-glossary.js")
+		script(src="jsc/sample-pair.js")
+		script(src="jsc/sample-hotkey.js")
+		script(src="jsc/sample-slides.js")
+		script(src="jsc/sample-maps.js")
+		script(src="jsc/sample-tree.js")
+		script(src="jsc/sample-ishikawa.js")
+		script(src="jsc/sample-timer.js")
+		script(src="jsc/sample-bcg.js")
+		script(src="jsc/sample-gantt.js")
+		script(src="jsc/sample-blueocean.js")
+		script(src="jsc/sample-canvas.js")
+		script(src="jsc/sample-pie.js")
+		script(src="jsc/sample-interface.js")
+		script(src="jsc/sample-businessmodel.js")
+		script(src="jsc/sample-start.js")
+		script(src="jsc/sample-nova.js")
+
+		script(src="jsc/main.js")
+
+	body
+		.navbar.navbar-fixed-top#navbar
+			.navbar-inner
+				.container-fluid
+					a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.brand#brand(href="#") Minday
+					.nav-collapse
+						ul.nav
+							li.dropdown#menufile
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Файл
+									b.caret
+								ul.dropdown-menu
+									li: a.file_new(href="#") Новая модель... <span style='text-align:right;'>(Ctrl-N)</span>
+									li: a.file_open(href="#") Открыть файл... (Ctrl-O)
+									li: a.file_save(href="#") Сохранить (Ctrl-S)
+									li: a.file_saveas(href="#") Сохранить файл как... (Ctrl-Alt-S)
+									li.divider
+									li: a.file_exportodt(href="#") Экспортировать в Word (.odt)
+									li: a.file_exportodp(href="#") Экспортировать в PowerPoint (.odp)
+									li.divider
+									li: a.server_changeuser(href="#")
+										span Пользователь: 
+										span#username
+										i.icon-user
+									li: a.server_open(href="#") Открыть на сервере...
+									li: a.server_refresh(href="#") Обновить с сервера
+									li: a.server_save(href="#") Сохранить на сервере
+									li: a.server_saveas(href="#") Сохранить на сервере как...
+									li.divider
+									li: a.server_share(href="#") Поделиться...
+									li: a.server_subscribe(href="#") Подключиться...
+									li: a.server_unsubscribe(href="#") Отключиться...
+									li.divider
+									li: a.file_exit(href="#") Выход (Alt-F4)
+							li.dropdown#menuedit
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Правка
+									b.caret
+								ul.dropdown-menu
+									li: a.edit_undo(href="#") Отмена (Ctrl-Z)
+									li: a.edit_redo(href="#") Повтор (Ctrl-Y)
+									li.divider
+									li: a.edit_cut(href="#") Вырезать (Ctrl-X)
+									li: a.edit_copy(href="#") Копировать (Ctrl-C)
+									li: a.edit_paste(href="#") Вставить (Ctrl-V)
+									li: a.edit_duplicate(href="#") Дублировать (Ctrl-0)
+									li: a.edit_delete(href="#") Удалить (Del)
+									li: a.edit_select_all(href="#") Выделить все (Ctrl-A)
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Изменить
+										ul.dropdown-menu
+											li: a.edit_text(href="#") Изменить текст... (F2)
+											li: a.edit_forma(href="#") Изменить фигуру... (F3)
+											li: a.edit_scheme(href="#") Изменить цвет... (Shift-F3)
+											li: a.edit_place(href="#") Изменить место... (Ctrl-F3)
+											li: a.edit_kind(href="#") Изменить тип... (F4)
+									li.divider
+									li: a.format_frame(href="#") Создать/скрыть фрейм (Alt-Enter)
+									li.divider
+									li: a.edit_find(href="#") Поиск... (Ctrl-F)
+									li: a.edit_findnext(href="#") Следующий (Ctrl-F)
+
+							li.dropdown#menuformat
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Формат
+									b.caret
+								ul.dropdown-menu
+									li: a.text_clearalign(href="#")	Очистить форматирование
+									li.divider
+									li.dropdown-submenu
+										a(data-toggle="dropdown", href="#") Формат текста
+										ul.dropdown-menu
+											li: a.format_bold(href="#") <b>Жирный текст</b> (Ctrl-B)
+											li: a.format_italic(href="#") <i>Наклонный текст</i> (Ctrl-I)
+											li: a.format_underline(href="#") <u>Подчеркнутый текст</u> (Ctrl-U)
+											li: a.format_linethrough(href="#") <span style='text-decoration:line-through;'>Зачеркнутый текст</span> (Alt-L)
+											li: a.format_border(href="#") <span style='border:1px solid Black;border-radius:10px;padding:5px;'>Рамка вокруг текста</span> (Ctrl-Alt-O)
+											li.divider
+											li: a.format_plain(href="#") Заголовок/простой текст (Alt-P)
+											li: a.format_readonly(href="#") <span style='color:lightGray'>Только для чтения</span> (Alt-R)
+									li.dropdown-submenu
+										a(href="#") Цветовая схема
+										ul.dropdown-menu
+											li: a.text_schemewhite(href="#"): span.scheme-white Белый
+											li: a.text_schemeblue(href="#"): span.scheme-blue Синий
+											li: a.text_schemelightblue(href="#"): span.scheme-lightblue Голубой
+											li: a.text_schemegreen(href="#"): span.scheme-green Зеленый
+											li: a.text_schemeyellow(href="#"): span.scheme-yellow Желтый
+											li: a.text_schemered(href="#"): span.scheme-red Красный
+											li: a.text_schemeblack(href="#"): span.scheme-black Черный
+									li.dropdown-submenu
+										a(href="#") Выравнивание
+										ul.dropdown-menu
+											li: a.text_left(href="#")
+												i.icon-align-left
+												&nbsp;Влево
+											li: a.text_center(href="#")
+												i.icon-align-center
+												&nbsp;Центр
+											li: a.text_right(href="#") 
+												i.icon-align-right
+												&nbsp;Вправо
+											li: a.text_justify(href="#")
+												i.icon-align-justify
+												&nbsp;Выровнять
+											li.divider
+											li: a.text_top(href="#") Верх									
+											li: a.text_middle(href="#") Середина 									
+											li: a.text_bottom(href="#") Низ									
+											li: a.text_childrenleft(href="#")
+												i.icon-align-left
+									li.dropdown-submenu
+										a(href="#") Выравнивание подидей
+										ul.dropdown-menu
+											li: a.text_childrenleft(href="#")
+												i.icon-align-left
+												&nbsp;Дочерние идеи влево
+											li: a.text_childrencenter(href="#")
+												i.icon-align-center
+												&nbsp;Дочерние идеи в центр
+											li: a.text_childrenright(href="#") 
+												i.icon-align-right
+												&nbsp;Дочерние идеи вправо
+											li: a.text_childrenjustify(href="#")
+												i.icon-align-justify
+												&nbsp;Дочерние идеи выровнять
+									li.dropdown-submenu
+										a(href="#") Формат списка
+										ul.dropdown-menu
+											li: a.format_ol(href="#") Нумерованный список (Alt-O)
+											li: a.format_ul(href="#") Ненумерованный список (Alt-U)
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Таблица
+										ul.dropdown-menu
+											li: a.format_listtable(href="#") Список/таблица
+											li: a.format_th(href="#") Заголовок/ячейка таблицы (Ctrl-2)
+											li: a.text2_tableclass(href="#") Класс таблицы
+									li.divider
+									li: a.text2_background(href="#") Фон
+
+							li.dropdown#menuinsert
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Вставка
+									b.caret
+								ul.dropdown-menu
+									li.dropdown-submenu
+										a(href="#") Вставить идею
+										ul.dropdown-menu
+											li: a.insert_childidea(href="#") Идея внутри (Ins)
+											li: a.insert_altchildidea(href="#") Идея снаружи (Alt-Ins)
+											li: a.insert_beforeidea(href="#") Идея до (Shift-Ins)
+											li: a.insert_afteridea(href="#") Идея после (Ctrl-Ins)
+											li.divider
+											li: a.insert_leftidea(href="#") Идея слева (Shift-Tab)
+											li: a.insert_rightidea(href="#") Идея справа (Tab,Ctrl-Tab)
+											li: a.insert_upidea(href="#") Идея сверху (Shift-Enter)
+											li: a.insert_downidea(href="#") Идея снизу (Enter, Ctrl-Enter)
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Строки и столбцы
+										ul.dropdown-menu
+											li: a.insert_leftcolumn(href="#") Столбец слева (Shift-Alt-Tab)
+											li: a.insert_rightcolumn(href="#") Столбец справа (Ctrl-Alt-Tab)
+											li: a.insert_uprow(href="#") Ряд сверху (Shift-Alt-Enter)
+											li: a.insert_downrow(href="#") Ряд снизу (Ctrl-Alt-Enter)
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Вставить карту
+										ul.dropdown-menu
+											li: a.insert_mindmap(href="#") Интеллектуальная карта (Ctrl-Alt-I)
+											li: a.insert_map(href="#") Стратегическая карта	(Ctrl-Alt-A)								
+											li: a.insert_presentation(href="#") Презентация (Ctrl-Alt-Z)
+											li: a.insert_matrix(href="#") Матрица (Ctrl-Alt-M)									
+											li: a.insert_tabs(href="#") Закладки (Ctrl-Alt-B)									
+											li: a.insert_tree(href="#") Дерево (Ctrl-Alt-W)									
+											li: a.insert_gantt(href="#") Диаграмма Гантта (Ctrl-Alt-G)									
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Вставить диаграмму
+										ul.dropdown-menu
+											li: a.insert_table(href="#") Таблица (Ctrl-Alt-T)
+											li: a.insert_pyramid(href="#") Пирамида (Ctrl-Alt-D)
+											li: a.insert_piechart(href="#") Круглая диаграмма (Ctrl-Alt-R)
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Вставить логические правила
+										ul.dropdown-menu
+											li: a.insert_fact(href="#") Факт
+											li: a.insert_rule(href="#") Правило
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Вставить вспомогательные идеи
+										ul.dropdown-menu
+											li: a.insert_tick(href="#") Галочка (да/нет)
+											li: a.insert_icon(href="#") Иконка
+											li: a.insert_tag(href="#") Тэг											
+											li.divider
+											li: a.insert_todo(href="#") Задача
+											li: a.insert_comment(href="#") Комментарий
+											li: a.insert_sticker(href="#") Стикер
+											li: a.insert_ballon(href="#") Баллон
+											li: a.insert_button(href="#") Кнопка
+
+							li.dropdown#menuview
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Вид
+									b.caret
+								ul.dropdown-menu
+									li: a.view_fullscreen(href="#") Полноэкранные режим (Shift-F11)
+									li.divider
+									li.dropdown-submenu
+										a(href="#") Показать элементы
+										ul.dropdown-menu
+											li: a.view_description(href="#") 
+												Описание 
+												i.icon-ok
+											li: a.view_guide(href="#") 
+												Гид
+												i.icon-ok
+											li: a.view_todo(href="#") 
+												Задачи
+												i.icon-ok
+											li: a.view_comment(href="#") 
+												Комментации
+												i.icon-ok
+											li: a.view_sticker(href="#") 
+												Стикеры
+												i.icon-ok
+											li: a.view_ballon(href="#") 
+												Баллоны
+												i.icon-ok
+									li.divider
+									li: a.view_timer(href="#") 
+										Таймер
+										i.icon-ok#icon-timer
+							li.dropdown#menuframe
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Методология
+									b.caret
+								ul.dropdown-menu
+									li: a(href="#") Пример пункта меню
+							li.dropdown#menuhelp
+								a.dropdown-toggle(data-toggle="dropdown", href="#")
+									Справка
+									b.caret
+								ul.dropdown-menu
+									li: a.help_help(href="#") Справка (Shift-F1)
+									li: a.help_hotkey(href="#") Горячие клавиши
+									li: a.help_method(href="#") Подбор методологии
+									li: a.help_knowledgebase(href="#") База знаний
+									li: a.help_portal(href="#") Портал Minday
+									li.divider
+									li: a.help_about(href="#") О программе (F1)
+																	
+					.navbar-search.pull-left
+						input#input_search.search-query.span2(type="text", placeholder="Поиск", style="border-radius:12px;")
+
+					.btn-group.pull-right
+						a.btn#timer(href="#")
+							i.icon-time
+							span#time Таймер
+
+		#toolbar.toolbar
+			.toolbar-btn: a.file_new(href="#")
+				i.icon-file
+				Новый
+			.toolbar-btn: a.file_open(href="#")
+				i.icon-file
+				Открыть
+			.toolbar-btn: a.file_open(href="#")
+				i.icon-file
+				Сохранить
+			.toolbar-btn: a.file_open(href="#"): i.icon-file
+			.toolbar-btn: a.file_open(href="#"): i.icon-file
+			.toolbar-btn: a.file_open(href="#"): i.icon-file
+
+		#desk.desk
+		//#sidebar.sidebar
+			#dialog_open
+			#guide.guide
+			#description.description
+			#step.step
+			#file.file
+		//#tooltip.tooltip
+
+		audio#tick-audio(src="sounds/tick.mp3")
+		audio#bell-audio(src="sounds/bell.mp3")		
+		script(src="js/yandex.js")

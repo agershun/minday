@@ -1,0 +1,824 @@
+MyBlue = #0026FF
+
+body
+	padding-top 40px
+	background: #FFD url("/img/grid-18px-masked.png") repeat-x
+
+//
+// Главная колонка
+//
+.desk
+	width: 100%
+	height: 100%
+	float:left
+	overflow: scrollbar
+
+.sidebar
+	position: fixed
+	width: 20%
+	top: 40px
+	right: 0px
+	font-size: 16px
+
+.guide
+	font-size: 16px
+	margin: 10px
+	padding: 10px
+	color: Red
+	background-color: White
+	border-radius: 5px
+	outline: 2px solid Red
+
+.description
+	font-size: 16px
+	margin: 10px
+	padding: 10px
+	border-radius: 5px
+	background-color: #FFE
+	border-color: Gray
+	outline: 2px solid Gray
+
+//.frame-txt
+//	color: Blue
+
+
+.frame-txt:hover
+	color:Blue
+	text-decoration: underline
+
+.edit-txt
+	color: Black
+	background-color: White
+
+.active-txt
+	outline: 1px dotted White
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+.active-txt-mot
+	color: darkBlue
+
+.active-txt-exa
+	color: darkGreen
+
+.active-mot
+	color: darkBlue
+	outline: 1px dotted Black
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+.active-bag
+	background-color: rgba(255,255,160,0.3)
+
+.active-tbl
+	background-color: rgba(255,255,160,0.2)
+
+.tbs
+	border-left: 1px solid Black
+	border-top: 1px solid Black
+	border-right: 1px solid Black
+	border-top-right-radius: 10px
+	border-top-left-radius: 10px
+	padding-top:10px
+	padding-bottom: 10px
+	margin-bottom:0px
+	color: Gray
+	border-color:Gray
+	
+.active-tbs
+	border-width: 3px
+	color: Black
+	border-color:Black
+
+.active-tab
+	border: 3px solid Black
+	display: block
+	padding: 5px
+	margin-top: 5px
+
+.inactive-tab
+	display: none
+
+.idea-txt
+	cursor:pointer
+	line-height: 1.25
+	display:inherit
+
+.idea-txt:after
+	content:" "
+
+.idea-txt0:after
+	@extends .idea-txt:after
+
+.idea-txt1:after
+	@extends .idea-txt:after
+
+.idea-txt2:after
+	@extends .idea-txt:after
+
+.idea-txt3:after
+	@extends .idea-txt:after
+	
+.idea-txt4:after
+	@extends .idea-txt:after
+
+.idea-mot
+	color: Gray
+
+.idea-exa
+	color: Green
+
+.idea-plain
+	@extends .idea-txt
+	font-size: 16px
+
+.idea-txt0
+	@extends .idea-txt
+	font-size: 28px
+	font-weight: bold
+
+.idea-txt1
+	@extends .idea-txt
+	font-size: 24px
+
+.idea-txt2
+	@extends .idea-txt
+	font-size: 20px
+
+.idea-txt3
+	@extends .idea-txt
+	font-size: 16px	
+
+.idea-txt4
+	@extends .idea-txt
+	font-size: 16px	
+
+
+.idea-bag
+	margin-top: 15px
+	margin-bottom: 15px
+	//display:inherit
+
+.idea-bag0
+	@extend .idea-bag
+	margin-left: 15px
+	margin-right: 15px
+	margin-top: 15px
+	margin-bottom: 15px
+
+.idea-bag1
+	@extend .idea-bag
+	margin-top: 10px
+	margin-bottom: 10px
+
+.idea-bag2
+	@extend .idea-bag
+	margin-top: 5px
+	margin-bottom: 5px
+
+.idea-bag3
+	@extend .idea-bag
+	margin-top: 5px
+	margin-bottom: 5px
+
+.idea-bag4
+	@extend .idea-bag
+	margin-top: 5px
+	margin-bottom: 5px
+
+.idea-bag-1
+	@extends .idea-bag4
+
+
+
+.idea-mot0
+	@extends .idea-txt0
+	@extends .idea-mot
+
+.idea-mot1
+	@extends .idea-txt1
+	@extends .idea-mot
+
+.idea-mot2
+	@extends .idea-txt2
+	@extends .idea-mot
+
+.idea-mot3
+	@extends .idea-txt3
+	@extends .idea-mot
+
+.idea-mot4
+	@extends .idea-txt4
+	@extends .idea-mot
+
+.idea-exa0
+	@extends .idea-txt0
+	@extends .idea-exa
+
+.idea-exa1
+	@extends .idea-txt1
+	@extends .idea-exa
+
+.idea-exa2
+	@extends .idea-txt2
+	@extends .idea-exa
+
+.idea-exa3
+	@extends .idea-txt3
+	@extends .idea-exa
+
+.idea-exa4
+	@extends .idea-txt4
+	@extends .idea-exa
+
+.normaltable table
+	display: block-inside
+
+.normaltable table
+.normaltable th
+.normaltable td
+	border: 1px solid Gray
+	
+.normaltable tr
+	vertical-align: top
+
+.keyfield
+	background-color: Red
+	color: White
+
+.normaltable th 
+	vertical-align: top
+	background: #AFF
+	text-align: left
+	padding-left: 15px
+	padding-right: 15px
+
+.normaltable td
+	padding-left: 15px
+	padding-right: 15px
+
+.guidetable table, th, td 
+	border: none
+	padding: 5px
+	pedding-cell: 5px
+	margin: 5px
+	vertical-align: top
+
+.guidetable table
+	margin: 5px
+
+.step 
+	margin-top: 5px 
+	margin-bottom: 0px 
+	margin-left: 6px
+	margin-right: 6px
+
+.sticker-bag
+	position: relative
+	padding:5px
+	border: 1px solid Yelow
+	//color:black
+	//background-color: rgba(0,0,0,1)
+	//background-color: Yellow
+	min-width:50px
+	font-family: 'Neucha', cursive
+	//z-index: 100
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset
+	//-webkit-transform: rotate(-5deg)
+	//	box-shadow: 7px 7px 5px rgba(0,0,0,0.5)
+
+.sticker-bag1:before
+	content: ''
+	z-index: -1
+	position:absolute
+	left: 10px
+	bottom: 10px
+	height: 55%
+	width: 70%
+	max-width: 300px
+	max-height: 100px
+	box-shadow: 0px 8px 16px rgba(0,0,0,0.3)
+	-webkit-transform: skew(-15deg) rotate(-10deg)
+
+.sticker-bag1:after
+	z-index: -1
+	content: ''
+	position:absolute
+	height: 100%
+	width: 70%
+	box-shadow: 0px 8px 16px rgba(0,0,0,0.5)
+	-webkit-transform: skew(-15deg) rotate(-10deg)
+	right: 10px
+	bottom: 10px
+
+
+//min-height:50px
+	
+//.sticker-bag:nth-of-type(2)
+//	-webkit-transform: rotate(10deg)
+//	background: #ccf
+
+//.sticker-bag:nth-of-type(3)
+//	-webkit-transform: rotate(-15deg)
+//	background: Yellow
+
+//.sticker-bag:hover
+//	-webkit-transform:scale(1.5)
+//	z-index: 20
+
+.sticker-txt
+	font-style:italic
+
+// Значок фрейма
+.frame
+	opacity: 0.7
+	cursor: pointer
+	
+.frame-head:after
+	@extends .frame
+	content: "\25B2"
+
+.frame-up:after
+	@extends .frame
+	content: "\25B3"
+
+.frame-down:after
+	@extends .frame
+	content: "\25BD"
+
+.frame-run:after
+	@extends .frame
+	content: "\25B6"
+
+.frame-goto:after
+	@extends .frame
+	content: "\25B7"
+
+.frame-url
+	text-decoration: underline
+
+.frame-url:after
+	@extends .frame
+	content: "\2191"
+
+
+.percent
+	opacity: 0.7
+
+//.image-bag
+//	margin: 5px
+//.image-txt
+//
+
+.idea-ul
+	list-style: disc
+	margin-bottom:0px
+	font-size: inherit
+
+.mindleaf
+	margin: 0px
+	padding: 10px
+
+.mindbag
+	//min-width: 75px
+	//max-width: 200px
+	//text-align: center
+	margin: 5px
+	padding: 5px
+	display:inline-block
+
+.node-txt
+	margin: 0px
+	padding: 10px
+
+.node-bag
+	//min-width: 75px
+	//max-width: 200px
+	//text-align: center
+	margin: 5px
+	padding: 5px
+	display:inline-block
+
+.petal-txt
+	margin: 0px
+	padding: 10px
+
+.petal-bag
+	//min-width: 75px
+	//max-width: 200px
+	//text-align: center
+	margin: 5px
+	padding: 5px
+	display:inline-block
+
+
+.pyramid
+	text-align: center
+	display:inline-block
+
+ol .idea-ol
+	list-style: decimal
+	margin-bottom:0px
+
+.idea-oul-plain
+	font-size: 16px
+
+.idea-oul0
+	font-size: 28px
+
+.idea-oul1
+	font-size: 24px
+
+.idea-oul2
+	font-size: 20px
+
+.idea-oul3
+	font-size: 16px
+
+.idea-oul4
+	font-size: 16px
+
+.idea-ul
+	padding-left:16px
+	font-size: 16px
+
+.idea-ul0
+	padding-left:28px
+	font-size: 28px
+
+.idea-ul1
+	padding-left:24px
+	font-size: 24px
+
+.idea-ul2
+	padding-left:20px
+	font-size: 20px
+
+.idea-ul3
+	padding-left:16px
+	font-size: 16px
+
+.idea-ul4
+	padding-left:16px
+	font-size: 16px
+
+.note
+	border-radius: 5px
+	outline: 1px solid Black
+	background-color: lightGray
+	padding: 10px
+
+.paper
+	overflow:auto
+
+.selected-txt
+	color:Red
+
+.slide
+	border-radius: 20px
+	border: 10px solid Gray
+	padding: 20px	
+	overflow: auto
+
+.bordered
+	outline: 1px solid Black
+	border-radius: 10px
+	padding: 10px
+	margin: 10px
+
+.mapbag
+	display:inline-block
+
+.noddebag 
+	margin: 10px
+	padding: 10px
+	display:inline-block
+	//border: 1px solid Black
+	//border-radius: 10px
+
+.noddetxt
+	color: Green
+
+.hlanebag 
+	outline: 1px dotted Black
+	margin: 10px
+	padding: 10px
+	display:block
+
+.hlanetxt
+	color: Blue
+	text-align:left
+
+.hlanechild
+	text-align:center
+	
+.groupbag 
+	outline: 1px dashed Black
+	border-radius: 10px
+	margin: 10px
+	padding: 10px
+	display:inline-block
+
+.grouptxt
+	color: Brown
+
+.cursor
+	border-radius:10px
+	outline: 1px dotted Red
+
+.bcgbag
+	color:Brown
+	display:inline-block
+
+.idea-span
+	display:inline-block
+	margin: 0px
+
+.idea-inline
+	display:inline-block
+	margin-left:5px
+	margin-right:5px
+
+#dialog_open
+	font-size: 16px
+	margin: 10px
+	padding: 10px
+	border-radius: 5px
+	background-color: #FFE
+	border-color: Green
+	outline: 2px solid Gray
+	max-height: 400px
+	overflow-y: scroll
+
+.panel-white
+	background: -webkit-linear-gradient(top, #0088cc, #0055cc)
+	color:White
+	border-radius: 10px
+	padding: 10px
+
+.panel-blue
+	//background-image: -webkit-linear-gradient(top, White 0%, MyBlue 25%, MyBlue 75%, White 100%)
+	background-color: MyBlue
+	color:White
+	border-radius: 10px
+	padding: 10px
+
+.panel-black
+	background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+	background-repeat: repeat-x;
+	border-color: #bd362f #bd362f #802420;
+
+#tick-audio 
+	display:none
+
+
+
+//.tick-bag
+//	font-size: 1.5em
+
+//.tick-txt
+//	font-size: 1.5em
+	
+.tick
+	//font-size: 1.5em
+	line-height: inherit
+	margin-left: 5px
+	margin-right: 5px
+
+.tick-yes:after
+	@extends .tick
+	content: "✔"
+	color:Green
+
+.tick-no:after
+	@extends .tick
+	content: "✘"
+	color:Red
+
+.tick-undefined:after
+	@extends .tick
+	content: "☐"
+	color:Gray
+
+
+
+//
+// Определяем @forma
+//
+.button
+	border-radius: 10px
+	padding: 10px
+
+.panel
+	border-radius: 0px
+	padding: 5px
+
+//
+// Основные цветовые схемы
+//
+.scheme
+	border: 1px solid 
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
+
+.scheme-white
+	@extends .scheme
+	color:Black
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6)
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf
+
+.scheme-blue
+	@extends .scheme
+	background-image: -webkit-linear-gradient(top, #0088cc, #0055cc)
+	border-color: #0055cc #0055cc #003580
+	color:White
+
+.scheme-lightblue
+	@extends .scheme
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	border-color: #2f96b4 #2f96b4 #1f6377
+	color:Black
+
+.scheme-green
+	@extends .scheme
+	background-image: -webkit-linear-gradient(top, #62c462, #51a351)
+	border-color: #51a351 #51a351 #387038
+	color:White
+
+.scheme-yellow
+	@extends .scheme
+	background-image: -webkit-linear-gradient(top, #fbb450, #f89406)
+	border-color: #f89406 #f89406 #ad6704	
+	color:White
+
+.scheme-red
+	@extends .scheme
+	background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f)
+	border-color: #bd362f #bd362f #802420
+	color:White
+
+.scheme-black
+	@extends .scheme
+	background-image: -webkit-linear-gradient(top, #555555, #222222)
+	border-color: #222222 #222222 #000000
+	color:White
+
+.tag-bag
+	border-radius: 5px
+	border: 1px solid Blue
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	border-color: #2f96b4 #2f96b4 #1f6377
+	color: White
+	padding-left:5px
+	padding-right:5px
+	margin-left:5px
+	margin-right:5px
+
+.tag-txt
+	color: White
+
+.tag-txt:after
+	padding-left:5px
+	content: "×"
+	color: Gray
+
+.iicon-bag
+	margin-left:5px
+	margin-right:5px
+	font-size: 1.5em
+	line-height: inherit
+
+.iicon-txt
+	color: Black
+
+.tooltip
+	background: White
+	color: Black
+	opacity: 1
+	border-radius: 5px
+	border: 1px solid Black
+	box-shadow: 10px 10px 7px rgba(0,0,0,0.7)
+	font-size: 14px
+
+.toolbar
+	background-image: -webkit-linear-gradient(top, white, #F2F2F2)
+	background-repeat: repeat-x
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976563) 0px -0.9090908765792847px 0px 0px inset, rgba(0, 0, 0, 0.0976563) 0px 0.9090908765792847px 10px 0px
+	color: Gray
+	padding-left: 20px
+	padding-right: 20px
+
+
+.toolbar-btn
+	display: inline-block
+	margin: 5px
+
+.display-none
+	display:none
+
+.idea-hover
+	border: 4px solid Red
+
+.ui-tooltip-content
+	font-size: 14px
+
+//=======================
+// CSS стили
+//=======================
+.cssrect
+	//
+
+.cssrrect
+	border-radius: 10px
+
+.cssoval
+	border-radius:50%
+
+//=======================
+// Разные колауты
+//=======================
+[class*="callout-"]
+	position:relative
+	background-color: Blue
+	@extend .cssrrect	
+
+.aftercallout
+	position:absolute
+	content:' '
+	width: 0
+	height: 0
+	border: 10px solid transparent
+
+.callout-up:after
+	@extends .aftercallout
+	border-bottom: 10px solid Blue
+	top:0%
+	left: 50%
+	margin-left: -10px
+	margin-top: -20px
+
+.callout-down:after
+	@extends .aftercallout
+	border-top: 10px solid Blue
+	top:100%
+	left: 50%
+	margin-left: -10px
+
+.callout-left
+	padding-left: 10px
+
+.callout-left:after
+	@extends .aftercallout
+	border-right: 10px solid Blue
+	top:50%
+	left: 0%
+	margin-left: -20px
+	margin-top: -10px
+
+.callout-right
+	padding-right: 10px
+
+.callout-right:after
+	@extends .aftercallout
+	border-left: 10px solid Blue
+	top:50%
+	left: 100%
+	margin-top: -10px
+
+// gem-blue
+.gem 
+	width:14px
+	height:14px
+	text-indent:-9999em
+	background-image:	-webkit-gradient(radial, 7 2, 0, 7 2, 3,from(rgba(255,255,255,0.85)),to(rgba(255,255,255,0))),-webkit-gradient(radial, 7 12, 0, 7 7, 14,from(#0088cc),to(#003580))
+	-webkit-border-radius:7px
+	border:1px solid #0055cc
+	-webkit-box-shadow:0 1px 0 #fff
+
+.gem-red
+	@extends .gem
+	background-image:	-webkit-gradient(radial, 7 2, 0, 7 2, 3,from(rgba(255,255,255,0.85)),to(rgba(255,255,255,0))),-webkit-gradient(radial, 7 12, 0, 7 7, 14,from(#bd362f),to(#802420))
+	border:1px solid #0088cc
+
+////////////////////////////
+// Эксперименты
+////////////////////////////
+.gem1
+	width:14px
+	height:14px
+	text-indent:-9999em
+	background-image:	-webkit-gradient(radial, 7 2, 0, 7 2, 3,from(rgba(255,255,255,0.85)),to(rgba(255,255,255,0))),-webkit-gradient(radial, 7 12, 0, 7 7, 14,from(#c7f08b),to(#006013))
+	-webkit-border-radius:7px
+	border:1px solid #48762c
+	-webkit-box-shadow:0 1px 0 #fff
+
+.cssoval1
+	position: relative
+
+.cssoval1:after
+	position: absolute
+	content: ""
+	-webkit-transform: skewX(20)
+	background: Red
+	height: 100%
+	width: 100%
+	top: 0%
+	z-index: 1
+	margin-left: -10px

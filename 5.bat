@@ -1,0 +1,1 @@
+call node c:\01\node_modules\jade\bin\jade index.jade
